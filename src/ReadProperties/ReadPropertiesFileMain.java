@@ -1,6 +1,8 @@
 package ReadProperties;
 
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ReadPropertiesFileMain {
@@ -18,5 +20,17 @@ public class ReadPropertiesFileMain {
             throw new Exception("File is not found \n " + e);
         }
 
+
+        ReadPropertiesFileMain RPF = new ReadPropertiesFileMain();
+        RPF.test(prop);
+
+    }
+
+    public void test(Properties prop) throws IOException {
+        InputStream file = null;
+        file = getClass().getClassLoader().getResourceAsStream("resource/classpath.properties");
+        prop.load(file);
+
+        System.out.println(prop.getProperty("email"));
     }
 }
