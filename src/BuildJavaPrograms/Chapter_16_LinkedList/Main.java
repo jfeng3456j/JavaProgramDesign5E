@@ -85,6 +85,7 @@ public class Main {
     }
 
     public static void traverseNode(ListNode p) {
+
 //        ListNode current = p;
 
 //        while (current != null) {
