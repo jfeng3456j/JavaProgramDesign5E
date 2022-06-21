@@ -1,7 +1,6 @@
 package BuildJavaPrograms.Chapter_10_ArrayList.DateTime;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class CalendarDateMain {
@@ -11,6 +10,7 @@ public class CalendarDateMain {
         dates.add(new CalendarDate(2,22));
         dates.add(new CalendarDate(10,22));
         dates.add(new CalendarDate(4,18));
+        dates.add(new CalendarDate(4,19));
         dates.add(new CalendarDate(1,8));
 
         System.out.println("before sort birthdays = " + dates);

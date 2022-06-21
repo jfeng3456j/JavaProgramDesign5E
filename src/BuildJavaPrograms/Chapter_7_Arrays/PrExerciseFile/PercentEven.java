@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Ten {
+public class PercentEven {
 
     public static void main (String[] args) {
         String quesiton = "Write a method called percentEven that accepts an array of integers as a parameter and returns the percentage of\n" +

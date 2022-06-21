@@ -10,7 +10,7 @@ public class DividendStock extends Stock {
     }
 
     public double getMarketValue() {
-        //super is the Stock, we are overriden stock getMarketValue method
+        //super is the Stock, we are overriden stock getMarketValue method.super is needed
         return super.getMarketValue() + dividends;
     }
 

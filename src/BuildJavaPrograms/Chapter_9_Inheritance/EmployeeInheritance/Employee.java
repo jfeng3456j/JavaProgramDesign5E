@@ -1,7 +1,6 @@
 package BuildJavaPrograms.Chapter_9_Inheritance.EmployeeInheritance;
 
 public class Employee {
-
     public int getHours() {
         return 40;
     }

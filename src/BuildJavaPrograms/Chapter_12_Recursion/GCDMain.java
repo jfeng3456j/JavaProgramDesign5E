@@ -4,7 +4,7 @@ public class GCDMain {
 
 
     public static void main (String[] args) {
-        System.out.println(findGreatestCommonDivider(4, 0));
+        System.out.println(findGreatestCommonDivider(132, 20));
     }
 
     public static int findGreatestCommonDivider(int x , int y) {
@@ -13,7 +13,7 @@ public class GCDMain {
             return Math.max(x,y);
         }
 
-        if ((y > x)) {
+        if (y > x) {
             return findGreatestCommonDivider(x, y % x);
         } else {
             return findGreatestCommonDivider(x % y, y );

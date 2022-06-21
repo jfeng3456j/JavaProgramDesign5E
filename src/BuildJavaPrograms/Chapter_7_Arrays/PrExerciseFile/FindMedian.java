@@ -3,7 +3,7 @@ package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
-public class Exercise_Eight {
+public class FindMedian {
 
     public static void main(String[] args) {
         String question = "Write a method called median that accepts an array of integers as its parameter and returns the median of the numbers in the array. The median is the number that appears in the middle of the list if you arrange the elements in order.\n" +

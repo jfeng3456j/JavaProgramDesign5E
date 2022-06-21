@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Two {
+public class FindMaxMin {
 
     public static void main (String[] args) {
         String question = "Write a method called range that returns the range of values in an array " +

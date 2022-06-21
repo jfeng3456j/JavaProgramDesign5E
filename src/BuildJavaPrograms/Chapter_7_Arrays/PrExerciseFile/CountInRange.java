@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Three {
+public class CountInRange {
 
     public static void main (String[] args) {
         String question = "Write a method called countInRange that accepts an array of integers, a minimum value, and a maximum value as\n" +

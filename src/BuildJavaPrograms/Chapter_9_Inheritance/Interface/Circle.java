@@ -4,6 +4,7 @@ public class Circle  implements  Shape {
 
     private double radius;
 
+    //constructor
     public Circle (double radius) {
         this.radius = radius;
     }

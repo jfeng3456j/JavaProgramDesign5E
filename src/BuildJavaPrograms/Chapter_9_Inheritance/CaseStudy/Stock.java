@@ -1,7 +1,7 @@
 package BuildJavaPrograms.Chapter_9_Inheritance.CaseStudy;
 
 public class Stock extends ShareAsset implements Asset {
-
+    //since shareasset implements asset, we avoid import of getProfit()
     private int totalShares;
 
     public Stock (String symbol, double currentPrice) {
@@ -21,7 +21,10 @@ public class Stock extends ShareAsset implements Asset {
     public void purchase(int shares, double pricePerShare) {
         totalShares += shares;
         addCost(shares + pricePerShare);
+
+
     }
+
 
 
 }

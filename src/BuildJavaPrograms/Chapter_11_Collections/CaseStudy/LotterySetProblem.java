@@ -16,6 +16,7 @@ public class LotterySetProblem {
         System.out.println("Winning ticket was: " + winNum);
 
         Set<Integer> matches = new TreeSet<>(ticket);
+        System.out.println("matches: " + matches);
         matches.retainAll(winNum);
 
         if (matches.size() > 0) {
@@ -32,7 +33,7 @@ public class LotterySetProblem {
         Random ran = new Random();
 
         while (winningNum.size() < 6) {
-            int num = ran.nextInt(MAX_NUMBER) + 1;
+            int num = ran.nextInt(MAX_NUMBER) + 1; // 1 -41
             winningNum.add(num);
         }
         return winningNum;

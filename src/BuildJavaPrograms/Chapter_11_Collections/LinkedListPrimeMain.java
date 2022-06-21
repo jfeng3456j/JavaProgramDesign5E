@@ -36,6 +36,7 @@ public class LinkedListPrimeMain {
             Iterator<Integer> it = numbers.iterator();
             while (it.hasNext()) {
                   int current = it.next();
+                  //remove from the list multiples of "front"
                   if ( current % front == 0) {
                       it.remove();
                   }

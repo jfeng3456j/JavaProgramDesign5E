@@ -22,6 +22,7 @@ public class DirectoryCrawlerMain {
             System.out.print(" ");
         }
 
+        //if its a file, print name
         System.out.println(f.getName());
 
         if (f.isDirectory()) {

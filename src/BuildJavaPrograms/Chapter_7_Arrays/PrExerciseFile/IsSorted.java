@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Four {
+public class IsSorted {
 
     public static void main (String[] args) {
         String question = "Write a method called isSorted that accepts an array of real numbers as a parameter and returns true if the list is in\n" +

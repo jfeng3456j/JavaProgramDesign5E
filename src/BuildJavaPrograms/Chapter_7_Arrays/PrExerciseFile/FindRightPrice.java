@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Tweleve {
+public class FindRightPrice {
 
     public static void main(String[] args) {
         String question = "Write a method called priceIsRight that mimics the guessing rules from the game show The Price Is Right. The\n" +

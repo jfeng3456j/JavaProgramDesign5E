@@ -1,13 +1,10 @@
 package BuildJavaPrograms.Chapter_9_Inheritance.EmployeeInheritance;
 
-public class LawyerChild extends Employee {
+public class LawyerChild extends Employee{
 
+    //overriding
     public int getVacationDays() {
         return 15;
-    }
-
-    public double getSalary() {
-        return super.getSalary() + 70000;
     }
 
     public String getVacationForm() {
@@ -15,6 +12,6 @@ public class LawyerChild extends Employee {
     }
 
     public void sue() {
-        System.out.println("Court cases");
+        System.out.println("Ability to bring people to court");
     }
 }

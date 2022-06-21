@@ -1,8 +1,14 @@
 package BuildJavaPrograms.Chapter_9_Inheritance.EmployeeInheritance;
 
-public class SecretaryChild extends Employee {
+public class SecretaryChild extends Employee{
+    //SecretaryChild will inherit copies of the getHours, getSalary, getVacationDays, and
+    //getVacationForm methods,
 
-    public void takeDictation(String text) {
-        System.out.println(" Dictating test: " + text);
+
+
+    public void takeDictionary(String text) {
+        System.out.println("Dictating text: " + text);
     }
+
+
 }

@@ -2,9 +2,7 @@ package BuildJavaPrograms.Chapter_10_ArrayList.CaseStudy;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class ReadNoDuplicateInList {
 
@@ -46,6 +44,7 @@ public class ReadNoDuplicateInList {
         }
 
         for (int i = 1; i < wordList.size(); i++ ) {
+                //check for unique
                 if (!wordList.get(i).equals(wordList.get(i-1))) {
                     NoDuplicateList.add(wordList.get(i));
                 }
@@ -71,6 +70,7 @@ public class ReadNoDuplicateInList {
                  index2++;
              }
         }
+
         return overLapList;
     }
 }

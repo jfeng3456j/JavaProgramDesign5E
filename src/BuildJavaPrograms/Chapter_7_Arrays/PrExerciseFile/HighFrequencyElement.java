@@ -3,7 +3,7 @@ package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Exercise_Five {
+public class HighFrequencyElement {
 
     public static void main (String[] args) {
         Random random = new Random();

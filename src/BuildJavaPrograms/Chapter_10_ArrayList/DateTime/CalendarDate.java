@@ -35,6 +35,7 @@ public class CalendarDate implements  Comparable<CalendarDate> {
         if (month != other.month) {
             return month - other.month;
         } else {
+            //same month check for day
             return day - other.day;
         }
     }

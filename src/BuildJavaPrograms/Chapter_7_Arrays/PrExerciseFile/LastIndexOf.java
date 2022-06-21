@@ -3,7 +3,7 @@ package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Exercises_One{
+public class LastIndexOf {
 
     public static void main (String[] args) {
         String question = "Write a method called lastIndexOf that accepts an array of integers and an integer value as its parameters and returns\n" +

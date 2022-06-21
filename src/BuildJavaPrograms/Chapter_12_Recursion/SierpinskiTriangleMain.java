@@ -35,10 +35,12 @@ public class SierpinskiTriangleMain {
             g.fillPolygon(p);
         }
         else {
+            //split into 3 triangles
             Point p4 = getMidPoint(p1, p2);
             Point p5 = getMidPoint(p2, p3);
             Point p6 = getMidPoint(p1, p3);
 
+            //recurse on 3 triangular areas
             drawFigure(level - 1 , g, p1, p4, p6);
             drawFigure(level - 1 , g, p4, p2, p5);
             drawFigure(level - 1 , g, p6, p5, p3);

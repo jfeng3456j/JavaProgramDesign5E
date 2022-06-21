@@ -1,6 +1,6 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-public class Exercise_Nine {
+public class FindMinGap {
 
     public static void main (String[] args) {
         String question = "Write a method called minGap that accepts an integer array as a parameter and returns the minimum difference or\n" +

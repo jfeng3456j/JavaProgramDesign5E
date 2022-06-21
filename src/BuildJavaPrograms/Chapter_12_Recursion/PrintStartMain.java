@@ -11,7 +11,7 @@ public class PrintStartMain {
             return;
         }
 
-        System.out.print(n);
+        System.out.print(n + " ");
         printRecursively(n - 1);
     }
 
