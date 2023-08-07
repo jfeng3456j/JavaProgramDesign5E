@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package Chapter3;
-import org.junit.jupiter.api.Test;
-
+import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 import java.util.Scanner;
 

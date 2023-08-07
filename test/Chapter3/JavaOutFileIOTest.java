@@ -5,7 +5,8 @@
  */
 package Chapter3;
 import java.util.Scanner;
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 

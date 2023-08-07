@@ -1,9 +1,7 @@
 package Chapter5;
 
-import org.junit.jupiter.api.Test;
-
-import static junit.framework.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class FindMaxNumSequenceTest {
 	

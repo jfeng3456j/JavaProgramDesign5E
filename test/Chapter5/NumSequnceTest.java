@@ -1,6 +1,6 @@
 package Chapter5;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
  
@@ -11,8 +11,7 @@ import java.util.List;
 public class NumSequnceTest {
 	
 	NumSequence ns = new NumSequence();
-	
-	
+
 	@Test
 	public void getSequenceTestOne() {
 		List<Integer> expected = Arrays.asList(75, 226, 113, 340, 170, 85, 256, 128, 64, 32, 16, 8, 4, 2, 1);

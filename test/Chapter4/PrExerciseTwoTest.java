@@ -1,6 +1,6 @@
 package Chapter4;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 

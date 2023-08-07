@@ -1,7 +1,5 @@
 package BuildJavaPrograms.Chapter_15_Implement_Collection;
 
-import org.hamcrest.internal.ArrayIterator;
-
 import java.util.Arrays;
 
 public class ArrayIntList {
