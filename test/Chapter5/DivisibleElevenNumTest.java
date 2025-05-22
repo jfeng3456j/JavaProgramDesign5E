@@ -1,12 +1,13 @@
 package Chapter5;
 
+import JavaProgramDesign.Chapter5.DivisibleElevenNum;
 import org.junit.Test;
 
 import static junit.framework.Assert.*;
 
 public class DivisibleElevenNumTest {
 	
-	DivisibleElevenNum  den= new DivisibleElevenNum();
+	DivisibleElevenNum den= new DivisibleElevenNum();
 	
 	@Test
 	public void testInputIntDivisible() {

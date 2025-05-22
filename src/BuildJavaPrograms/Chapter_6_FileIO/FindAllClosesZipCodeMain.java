@@ -16,11 +16,11 @@ public class FindAllClosesZipCodeMain {
             System.out.println("And what proximity (in miles)?");
             double miles = input.nextDouble();
 
-            Scanner file = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/zipcode.txt"));
+            Scanner file = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/Input_Files/zipcode.txt"));
             String coordinates = find(zipCode, file);
 
             //find all match zip within the giving miles using haversine formula but start from beginning in zip file
-            file = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/zipcode.txt"));
+            file = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/Input_Files/zipcode.txt"));
             findAllMatchZip(file, miles, coordinates);
 
         } catch (FileNotFoundException e) {

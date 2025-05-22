@@ -8,7 +8,7 @@ public class ReadEmpIdHrFileMain {
 
     public static void main (String[] args ) {
        try {
-           Scanner input = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/empId.dat"));
+           Scanner input = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/Input_Files/empId.dat"));
            while (input.hasNextLine()) {
                    String data = input.nextLine();
                     processFile(data);

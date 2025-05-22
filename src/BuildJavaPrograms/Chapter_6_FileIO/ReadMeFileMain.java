@@ -9,7 +9,7 @@ public class ReadMeFileMain {
 
     public static void main(String[] args) {
         try {
-            PrintStream output = new PrintStream("./src/BuildJavaPrograms/Chapter_6_FileIO/output.txt");
+            PrintStream output = new PrintStream("./src/BuildJavaPrograms/Chapter_6_FileIO/Output_Files/output.txt");
             output.println("Testing,");
             output.println("1,2,3.");
             output.println();

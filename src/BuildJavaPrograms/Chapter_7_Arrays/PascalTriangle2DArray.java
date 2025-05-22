@@ -1,12 +1,10 @@
 package BuildJavaPrograms.Chapter_7_Arrays;
 
-import java.util.Arrays;
-
 public class PascalTriangle2DArray {
 
     public static void main(String[] args) {
 
-        int rowCount = 1;
+        int rowCount = 10;
 
         printTriangle(rowCount);
     }

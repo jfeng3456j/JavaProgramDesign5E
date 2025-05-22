@@ -1,5 +1,6 @@
 package Chapter5;
 
+import JavaProgramDesign.Chapter5.FindMaxNumSequence;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

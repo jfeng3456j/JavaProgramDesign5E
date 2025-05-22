@@ -1,6 +1,7 @@
 package ReadProperties;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -16,8 +17,8 @@ public class ReadPropertiesFileMain {
             System.out.println(prop.getProperty("username"));
             System.out.println(prop.getProperty("password"));
             System.out.println(prop.getProperty("email"));
-        } catch (Exception e) {
-            throw new Exception("File is not found \n " + e);
+        } catch (FileNotFoundException e) {
+            throw new FileNotFoundException("File is not found \n " + e);
         }
 
 

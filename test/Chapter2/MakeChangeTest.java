@@ -5,6 +5,7 @@
  */
 package Chapter2;
 
+import JavaProgramDesign.Chapter2.MakeChange;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

@@ -8,7 +8,7 @@ public class ReadEmpHrFileMain {
 
     public static void main (String[] args) {
         try {
-            Scanner input = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/emp.dat"));
+            Scanner input = new Scanner(new File("./src/BuildJavaPrograms/Chapter_6_FileIO/Input_Files/emp.dat"));
             calculateEmpHr(input);
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());

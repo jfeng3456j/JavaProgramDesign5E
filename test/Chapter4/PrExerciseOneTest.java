@@ -1,5 +1,6 @@
 package Chapter4;
 
+import JavaProgramDesign.Chapter4.PrExerciseOne;
 import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 

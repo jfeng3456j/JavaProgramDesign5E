@@ -6,6 +6,7 @@
 package Chapter3;
 import java.util.Scanner;
 
+import JavaProgramDesign.Chapter3.JavaOutFileIO;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

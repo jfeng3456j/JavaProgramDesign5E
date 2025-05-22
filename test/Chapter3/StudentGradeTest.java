@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Chapter3;
+import JavaProgramDesign.Chapter3.JavaIOStudentGrade;
 import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 import java.util.Scanner;

@@ -1,5 +1,6 @@
 package Chapter5;
 
+import JavaProgramDesign.Chapter5.SumEvenOdd;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

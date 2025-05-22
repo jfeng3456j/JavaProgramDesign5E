@@ -7,7 +7,9 @@ public class SerializeArrayList {
 
     public static void main(String[] args) throws Exception {
         //https://howtodoinjava.com/java/collections/arraylist/serialize-deserialize-arraylist/
+        System.out.println("Serialize Array Data");
         serializeArrayList();
+        System.out.println("Deserialize Array Data");
         deserializeArrayList();
     }
 
@@ -24,6 +26,7 @@ public class SerializeArrayList {
             FileOutputStream outputStream = new FileOutputStream("listData");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
             objectOutputStream.writeObject(nameList);
+            System.out.println("serializing array data:" + objectOutputStream.toString());
             objectOutputStream.close();
             outputStream.close();
 

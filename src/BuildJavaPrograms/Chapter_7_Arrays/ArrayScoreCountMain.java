@@ -12,7 +12,8 @@ public class ArrayScoreCountMain {
         try {
 
             int[] scoreCount = new int[5];
-            Scanner file = new Scanner(new File("./src/BuildJavaPrograms/Chapter7_Arrays/score.dat"));
+            //Scanner file = new Scanner(new File("./src/BuildJavaPrograms/Chapter7_Arrays/score.dat"));
+            Scanner file = new Scanner(new File("src/BuildJavaPrograms/Chapter_7_Arrays/score.dat"));
 
             while(file.hasNext()) {
                 int score = file.nextInt();
