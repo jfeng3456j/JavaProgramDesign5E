@@ -1,5 +1,7 @@
 package JavaProgramDesign.Chapter5;
 
+import Utils.HelperMethods;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -31,10 +33,10 @@ public class ProgrammingExercise {
 //		System.out.println(seo.getEvenOddSum(input));
 //		HelperMethods.printLine();
 		
-//		CheckPrimeNum cpn = new CheckPrimeNum();
-//		int input = HelperMethods.scannerInt(sc);
-//		System.out.println(cpn.checkPrime(input));
-//		HelperMethods.printLine();
+		CheckPrimeNum cpn = new CheckPrimeNum();
+		int input = HelperMethods.scannerInt(sc);
+		System.out.println(cpn.checkPrime(input));
+		HelperMethods.printLine();
 		
 //		DivisibleElevenNum den = new DivisibleElevenNum();
 //		HelperMethods.problemDescription(den.question);
@@ -47,8 +49,8 @@ public class ProgrammingExercise {
 //		int input = HelperMethods.scannerInt(sc);
 //		System.out.println(ns.getSequence(input).toString());
 		
-		CheckLockerStatus cls = new CheckLockerStatus();
-		System.out.println(cls.checkLockerState(100));
+//		CheckLockerStatus cls = new CheckLockerStatus();
+//		System.out.println(cls.checkLockerState(100));
 		
 		
 		

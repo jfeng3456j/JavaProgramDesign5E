@@ -14,10 +14,10 @@ import static junit.framework.Assert.assertEquals;
  *
  * @author Feng-iMac
  */
-public class MakeChangeTest {
+public class TestMakeChange {
     MakeChange mc = new MakeChange();
     
-    public MakeChangeTest() {
+    public TestMakeChange() {
     }
     
     @Test

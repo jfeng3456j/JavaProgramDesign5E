@@ -14,11 +14,11 @@ import static junit.framework.Assert.assertEquals;
  *
  * @author Feng-iMac
  */
-public class ConvertLengthTest {
+public class TestConvertLength {
     //initialize the convert length object
     ConvertLength lc = new ConvertLength();
     
-    public ConvertLengthTest() {
+    public TestConvertLength() {
     }
     
     @Test

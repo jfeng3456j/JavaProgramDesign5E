@@ -1,4 +1,4 @@
-package heap;
+package RandomJavaProblems.heap;
 
 public class HeapImplementation {
 

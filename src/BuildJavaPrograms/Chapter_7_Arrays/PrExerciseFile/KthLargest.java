@@ -1,7 +1,5 @@
 package BuildJavaPrograms.Chapter_7_Arrays.PrExerciseFile;
 
-import heap.PriorityQueueMaxHeap;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;

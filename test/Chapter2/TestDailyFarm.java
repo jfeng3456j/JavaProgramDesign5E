@@ -13,10 +13,10 @@ import static junit.framework.Assert.assertEquals;
  *
  * @author Feng-iMac
  */
-public class DailyFarmTest {
+public class TestDailyFarm {
     DailyFarm df = new DailyFarm();
     
-    public DailyFarmTest() {
+    public TestDailyFarm() {
     
     }
     
