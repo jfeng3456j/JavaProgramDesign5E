@@ -6,31 +6,50 @@ public class PascalTriangle2DArray {
 
         int rowCount = 10;
 
-        printTriangle(rowCount);
+        int[][] pascalTriangle = createPasacalTriangle(rowCount);
+
+        printTriangle(pascalTriangle);
     }
 
-    private static void printTriangle(int rowCount) {
-        int[][] pascalTriangle = new int[rowCount][];
-        for (int i = 0; i < pascalTriangle.length; i++) {
-            //create column per row
-            pascalTriangle[i] = new int[i + 1];
+    private static int[][] createPasacalTriangle(int rowCount)
+    {
+        int[][] PascalTriangle = new int[rowCount][];
 
-            //fill the first and last cell with 1
-            pascalTriangle[i][0] = 1;
-            pascalTriangle[i][i] = 1;
+        //create the first row and initiaze it to 1
+        for (int row = 0; row < rowCount; row++)
+        {
+            // create column
+            PascalTriangle[row] = new int[row + 1];
 
-            //fill the middle cell by using previous row cell
-            for (int j = 1; j < i; j++) {
-                pascalTriangle[i][j] = pascalTriangle[i - 1][j - 1] + pascalTriangle[i - 1][j];
+            // fill first cell 0:0
+            PascalTriangle[row][0] = 1;
+
+            // fill last cell row: row
+            PascalTriangle[row][row] = 1;
+
+            //fill the middle with column < Prev row length - 1 or column < row
+            for (int col = 1; col < PascalTriangle[row].length -1; col++)
+            {
+                //System.out.println("what is row length" + );
+                // add prev rows - 2 cells [row-1][col-1] [row-1][col] together
+                PascalTriangle[row][col] = PascalTriangle[row -1][col - 1] + PascalTriangle[row - 1][col];
             }
+
         }
 
-        //print the triangle
-        for (int i = 0; i < pascalTriangle.length; i++) {
-            for (int j = 0; j < pascalTriangle[i].length; j++) {
-                System.out.print(pascalTriangle[i][j] + " ");
+        return PascalTriangle;
+    }
+
+    private static void printTriangle(int[][] pascalTriangle)
+    {
+        for (int row = 0; row < pascalTriangle.length; row++)
+        {
+            for (int col = 0; col < pascalTriangle[row].length; col++)
+            {
+                System.out.print(pascalTriangle[row][col] + " ");
             }
             System.out.println();
         }
     }
+
 }

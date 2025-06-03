@@ -19,6 +19,88 @@ public class MagicSquare {
         System.out.println("check if sum of row, column and diagonal are all equal: " + isMagicNum);
     }
 
+    private static boolean checkMagicNum(int[][] magicNums)
+    {
+        if (magicNums == null) throw new NullPointerException();
+
+        if (magicNums.length < 1) return false;
+
+        // ensure row and col length are the same
+        for (int row = 0; row < magicNums.length; row++)
+        {
+            // row length != col length
+            if (magicNums.length != magicNums[row].length) return false;
+        }
+
+        int rowSum = 0, diagSum = 0;
+
+        //calculate first row's sum
+        for (int col = 0; col < magicNums[0].length; col++)
+        {
+            rowSum += magicNums[0][col];
+        }
+
+        // check all other row's sum
+        for (int row = 1;  row < magicNums.length; row++)
+        {
+            int cellSum = 0;
+            //col value
+            for (int col = 0; col < magicNums[row].length; col++)
+            {
+                cellSum += magicNums[row][col];
+            }
+
+            if (cellSum != rowSum) return false;
+        }
+
+        // check each col sum with row sum
+        for (int col = 0; col < magicNums.length; col++)
+        {
+            int cellSum = 0;
+            for (int row = 0; col < magicNums.length; col++)
+            {
+                // add first row first col, then 2nd row first col
+                cellSum += magicNums[row][col];
+            }
+
+            if (cellSum != rowSum) return false;
+        }
+
+        // check diagonal sum with row sum
+        //diagonal 1
+        /*
+         * [2,0,0]
+         * [0,5,0]
+         * [0,0,8]
+         * */
+        for (int row = 0; row < magicNums.length; row ++)
+        {
+            // add up diagonally 2, 5, 8
+            diagSum += magicNums[row][row];
+
+        }
+
+        if (diagSum != rowSum) return false;
+
+        //diagonal 1
+        /*
+         * [0,0,6]
+         * [0,5,0]
+         * [4,0,0]
+         * */
+        for (int row = 0; row < magicNums.length; row ++)
+        {
+            // add up diagonally 6, 5, 4
+            diagSum += magicNums[row][magicNums.length - 1 - row];
+
+        }
+
+        if (diagSum != rowSum) return false;
+
+        return true;
+
+    }
+
     private static boolean findMagicNum(int[][] magicNums) {
 
         if (magicNums  == null) throw new NullPointerException();
@@ -26,7 +108,7 @@ public class MagicSquare {
         if (magicNums.length < 1) return true;
 
         //make sure row length is same as col length
-        for(int i = 0; i < magicNums.length; i++) {
+        for (int i = 0; i < magicNums.length; i++) {
             if (magicNums.length != magicNums[i].length) return false;
         }
 
@@ -42,7 +124,7 @@ public class MagicSquare {
         for (int i = 1; i < magicNums.length; i++) {
              int sum = 0;
 
-             //add up row sum
+             //add col up to get row sum
              for (int j = 0; j < magicNums[i].length; j++) {
                  sum += magicNums[i][j];
              }
